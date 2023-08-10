@@ -28,6 +28,7 @@ module "iam_assumable_role" {
   ]
   number_of_custom_role_policy_arns = 2
 }
+```
 
 To run this example you need to execute:
 
