@@ -4,6 +4,19 @@ Configuration in this directory sets [AWS account alias](https://docs.aws.amazon
 
 # Usage
 
+iam-account:
+
+```bash
+module "iam_account" {
+  source  = "terraform-aws-modules/iam/aws//modules/iam-account"
+
+  account_alias = "awesome-company"
+
+  minimum_password_length = 37
+  require_numbers         = false
+}
+```
+
 To run this example you need to execute:
 
 ```bash
